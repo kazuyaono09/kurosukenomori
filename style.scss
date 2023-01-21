@@ -18,12 +18,6 @@ body {
   position: relative;
   width: 100%;
 }
-@media screen and (max-width:768px) {
-  body {
-    width: 100%;
-  }
-}
-
 
 /* ============================================================================================================
                                                 メインコンテンツ
@@ -32,11 +26,6 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-}
-@media screen and (max-width:768px) {
-  main {
-    width: 100%;
-  }  
 }
 
 .inner {
@@ -138,7 +127,7 @@ main {
   padding: 23px 0px;
   &:hover {
     color: $c-text;
-    background-color: #e8e7e7;
+    background-color: $c-white;
     box-shadow: 3px 3px 6px #6d6d6d;
   }
 }
@@ -383,7 +372,6 @@ main {
       top: 50%;
       left: 40px;
       transform: translate(-50%,-50%) rotate(90deg);
-      width: 450px;
       font-size: 13px;
       padding: 0px 20px;
     }
@@ -822,8 +810,6 @@ main {
               font-size: 14px;
             }
             .news__list--title {
-              width: 80px;
-              text-align: center;
               font-size: 13px;
               padding: 4px 8px;
             }
@@ -956,11 +942,11 @@ main {
       gap: 50px;
       .project__left {
         width: 100%;
-        padding: 0px;
+        padding: 0px 20px;
         .project__left__title {
-          font-size: 20px;
+          font-size: 23px;
           text-align: center;
-          gap: 5px;
+          gap: 10px;
           margin-bottom: 18px;
         }
         .project__left__text {
@@ -979,11 +965,11 @@ main {
       }
       .project__right {
         width: 100%;
-        padding: 0px;
+        padding: 0px 20px;
         .project__right__title {
-          font-size: 20px;
+          font-size: 23px;
           text-align: center;
-          gap: 5px;
+          gap: 10px;
           margin-bottom: 21px;
         }
         .project__right__text {
