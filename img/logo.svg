@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="293.027" height="249.587" viewBox="0 0 293.027 249.587">
+  <defs>
+    <filter id="前面オブジェクトで型抜き_1" x="68.17" y="46.578" width="158" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="k" x="29.314" y="208.793" width="44.342" height="40.794" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="u" x="13.725" y="190.924" width="46.779" height="35.654" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="r" x="3.952" y="168.879" width="45.552" height="26.46" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-4"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="o" x="0.17" y="146.578" width="44" height="22" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-5"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="s" x="0" y="119.206" width="45.457" height="24.66" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-6"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="u-2" x="4.373" y="90.435" width="46.816" height="35.159" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-7"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="k-2" x="17.504" y="66.938" width="44.972" height="39.662" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-8"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="e" x="30.178" y="46.851" width="44.971" height="41.571" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-9"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="n" x="57.974" y="20.75" width="39.276" height="46.039" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-10"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="o-2" x="82.044" y="9.567" width="36.56" height="47.202" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-11"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="m" x="118.77" y="0" width="31.315" height="46.769" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-12"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="o-3" x="148.728" y="0.305" width="25.884" height="45.464" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-13"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="r-2" x="171.167" y="5.949" width="28.204" height="45.539" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-14"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="i" x="186.523" y="14.36" width="31.062" height="42.409" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-15"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="d" x="203.333" y="29.475" width="43.618" height="44.703" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-16"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="e-2" x="221.17" y="50.609" width="45.559" height="40.471" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-17"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-17"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="s-2" x="233.244" y="73.099" width="44.852" height="33.053" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-18"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-18"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="i-2" x="240.656" y="95.874" width="44.303" height="24.4" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-19"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-19"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="g" x="247.17" y="113.598" width="45.857" height="27.133" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-20"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-20"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="n-2" x="245.17" y="140.312" width="45.163" height="24.255" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-21"/>
+      <feFlood flood-opacity="0.306"/>
+      <feComposite operator="in" in2="blur-21"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="L" x="239.128" y="169.879" width="45.848" height="29.155" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-22"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-22"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="a" x="231.317" y="187.218" width="47.064" height="37.967" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-23"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-23"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="b" x="218.93" y="207.328" width="46.451" height="40.514" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-24"/>
+      <feFlood flood-opacity="0.314"/>
+      <feComposite operator="in" in2="blur-24"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="logo" transform="translate(-108.496 -128.231)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(182.886 180.809)">
+      <g transform="matrix(1, 0, 0, 1, -74.39, -52.58)" filter="url(#前面オブジェクトで型抜き_1)">
+        <path id="前面オブジェクトで型抜き_1-2" data-name="前面オブジェクトで型抜き 1" d="M140,168l0,0a163.832,163.832,0,0,0-21.873-11.156A156.665,156.665,0,0,0,95.7,149.173,104.743,104.743,0,0,0,70,145.686a104.743,104.743,0,0,0-25.7,3.486,156.662,156.662,0,0,0-22.422,7.669A165.857,165.857,0,0,0,0,168L70,0l70,168ZM70,84a13,13,0,1,0,9.192,3.808A12.915,12.915,0,0,0,70,84Z" transform="translate(74.17 52.58)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#k)">
+      <text id="k-3" data-name="k" transform="matrix(-0.63, -0.78, 0.78, -0.63, 60.66, 225.34)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">k</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#u)">
+      <text id="u-3" data-name="u" transform="translate(46.35 208.32) rotate(-115)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">u</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#r)">
+      <text id="r-3" data-name="r" transform="matrix(-0.26, -0.97, 0.97, -0.26, 34.81, 181.83)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">r</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#o)">
+      <text id="o-4" data-name="o" transform="translate(29.17 162.58) rotate(-90)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">o</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#s)">
+      <text id="s-3" data-name="s" transform="matrix(0.21, -0.98, 0.98, 0.21, 28.37, 135.99)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">s</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#u-2)">
+      <text id="u-4" data-name="u" transform="matrix(0.41, -0.91, 0.91, 0.41, 30.87, 115.93)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">u</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#k-2)">
+      <text id="k-4" data-name="k" transform="matrix(0.59, -0.81, 0.81, 0.59, 40.97, 95.31)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">k</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#e)">
+      <text id="e-3" data-name="e" transform="translate(52.72 76.76) rotate(-51)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">e</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#n)">
+      <text id="n-3" data-name="n" transform="matrix(0.84, -0.54, 0.54, 0.84, 73.77, 53.24)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">n</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#o-2)">
+      <text id="o-5" data-name="o" transform="translate(94.3 42.61) rotate(-25)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">o</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#m)">
+      <text id="m-2" data-name="m" transform="matrix(1, -0.09, 0.09, 1, 121.38, 31.8)" fill="#fff" font-size="31" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">m</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#o-3)">
+      <text id="o-6" data-name="o" transform="matrix(0.99, 0.1, -0.1, 0.99, 149.67, 29.15)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">o</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#r-2)">
+      <text id="r-4" data-name="r" transform="matrix(0.95, 0.31, -0.31, 0.95, 173.95, 33.53)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">r</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#i)">
+      <text id="i-3" data-name="i" transform="translate(191.02 39.47) rotate(30)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">i</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#d)">
+      <text id="d-2" data-name="d" transform="matrix(0.73, 0.68, -0.68, 0.73, 209.47, 50.68)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">d</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#e-2)">
+      <text id="e-4" data-name="e" transform="matrix(0.59, 0.81, -0.81, 0.59, 228.45, 67.65)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">e</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#s-2)">
+      <text id="s-4" data-name="s" transform="matrix(0.45, 0.89, -0.89, 0.45, 241.26, 86.26)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">s</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#i-2)">
+      <text id="i-4" data-name="i" transform="matrix(0.31, 0.95, -0.95, 0.31, 249.22, 104.84)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">i</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#g)">
+      <text id="g-2" data-name="g" transform="translate(256.08 117.63) rotate(82)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">g</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#n-2)">
+      <text id="n-4" data-name="n" transform="translate(255.44 141.1) rotate(95)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">n</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#L)">
+      <text id="L-2" data-name="L" transform="translate(251.4 172.66) rotate(108)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">L</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#a)">
+      <text id="a-2" data-name="a" transform="matrix(-0.47, 0.88, -0.88, -0.47, 246.77, 191.44)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">a</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 108.5, 128.23)" filter="url(#b)">
+      <text id="b-2" data-name="b" transform="matrix(-0.56, 0.83, -0.83, -0.56, 235.34, 212.36)" fill="#fff" font-size="30" font-family="FuturaPT-Medium, Futura PT" font-weight="500"><tspan x="0" y="0">b</tspan></text>
+    </g>
+  </g>
+</svg>
