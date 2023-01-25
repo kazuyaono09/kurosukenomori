@@ -81,6 +81,51 @@ main {
   }  
 }
 
+.section__under--title {
+  font-size: 40px;
+  font-family: "futura";
+  font-weight: 500;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 52px;  
+}
+@media screen and(max-width:768px){
+  .section__title {
+    font-size: 30px;
+    font-family: "futura";
+    font-weight: 300;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }  
+}
+.under__title--ja {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック JP";
+  font-weight: 400;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 35px;  
+}
+@media screen and(max-width:768px){
+  .title__ja {
+    font-size: 12px;
+    font-family: "源ノ角ゴシック JP";
+    font-weight: 200;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }  
+}
+
+
 
 .btn--type01 {
   width: 280px;
@@ -256,6 +301,27 @@ main {
       opacity: 1;
     }
   }
+}  
+
+@media screen and(max-width:768px){
+  .header {
+    width: 100%;
+    height:75px;
+    .header__logo__link {
+      display: block;
+      z-index: 10;
+      .header__logo {
+        width: 61px;
+        height: 52px;
+      }
+    }
+    .humbergar {
+      position: relative;
+    }
+    .header__navi {
+      padding: 200px 0px;
+    }
+  }  
 }
 @media screen and(max-width:768px){
   .header {
@@ -810,6 +876,8 @@ main {
               font-size: 14px;
             }
             .news__list--title {
+              width: 80px;
+              text-align: center;
               font-size: 13px;
               padding: 4px 8px;
             }
@@ -1084,6 +1152,146 @@ main {
   }  
 }
 
+//ここから下層ページの指定です。
+//section__under__about
+#section__under__about {
+  width: 100%;
+  background-color: $c-bgcolor02;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  .section__under--title {
+    font-size: 40px;
+    font-family: "futura";
+    font-weight: 500;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 52px;  
+  }
+  .under__title--ja {
+    font-size: 14px;
+    font-family: "源ノ角ゴシック JP";
+    font-weight: 400;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-bottom: 35px;  
+  }
+  .under__about--navi {
+    width: 100%;
+    margin-bottom: 40px;
+    .under__about--list {
+      font-size: 15px;
+      font-family: "源ノ角ゴシック";
+      font-weight: 500;
+      color: $c-text;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      list-style: none;
+    }
+  }
+  .under__about__contents {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    .under__about__left {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background-color: $c-white;
+    }
+    .under__about__right {
+      width: 60%;
+      .about__right__content {
+        width: 100%;
+        .right__content__item {
+          .contenm__item--name {
+            width: 200px;
+            font-size: 15px;
+            font-weight: normal;
+            font-family: "源ノ角ゴシック";
+            text-align: left;
+            letter-spacing: 0.05em;
+            line-height:28px ;
+            padding: 10px 10px;
+          }
+          .contenm__item--text {
+            font-size: 15px;
+            font-weight: normal;
+            font-family: "源ノ角ゴシック";
+            text-align: left;
+            letter-spacing: 0.05em;
+            line-height:28px ;
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:768px){
+
+}
+
+//section__under__works
+#section__under__works {
+  width: 100%;
+  background-color: $c-bgcolor02;
+  padding-top:120px ;
+  padding-bottom: 70px;
+  .under__works__contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .under__works__list {
+      width: 100%;
+      list-style: none;
+      transition: all 0.3s;
+      margin-bottom: 70px;
+      .under__works--link {
+        text-decoration: none;
+        display: block;
+        .under__works--img {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        .under__works--skill {
+          font-size: 14px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+        .under__works--text {
+          font-size: 14px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 28px;
+        }
+      }
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+  .scroll--btn {
+    text-align: center;
+    .scroll--link {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
+
 
 //section__footer
 #footer {
@@ -1237,7 +1445,7 @@ main {
     .copy__right {
       font-size: 13px;
       text-align: center;
-      margin-top: 17px;
+      margin-top: 20px;
     }
   }  
 }

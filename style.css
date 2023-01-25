@@ -11,11 +11,6 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-}
 /* ============================================================================================================
                                                 メインコンテンツ
 ============================================================================================================ */
@@ -25,11 +20,6 @@ main {
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    width: 100%;
-  }
-}
 .inner {
   padding: 0px 105px;
 }
@@ -84,6 +74,51 @@ main {
     margin-bottom: 40px;
   }
 }
+.section__under--title {
+  font-size: 40px;
+  font-family: "futura";
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 52px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 30px;
+    font-family: "futura";
+    font-weight: 300;
+    color: #333333;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+}
+.under__title--ja {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック JP";
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .title__ja {
+    font-size: 12px;
+    font-family: "源ノ角ゴシック JP";
+    font-weight: 200;
+    color: #333333;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
 .btn--type01 {
   width: 280px;
   font-size: 14px;
@@ -132,7 +167,7 @@ main {
 }
 .btn--type02:hover {
   color: #333333;
-  background-color: #e8e7e7;
+  background-color: #ffffff;
   -webkit-box-shadow: 3px 3px 6px #6d6d6d;
           box-shadow: 3px 3px 6px #6d6d6d;
 }
@@ -305,6 +340,26 @@ main {
     padding: 200px 0px;
   }
 }
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 75px;
+  }
+  .header .header__logo__link {
+    display: block;
+    z-index: 10;
+  }
+  .header .header__logo__link .header__logo {
+    width: 61px;
+    height: 52px;
+  }
+  .header .humbergar {
+    position: relative;
+  }
+  .header .header__navi {
+    padding: 200px 0px;
+  }
+}
 .main__visual {
   position: relative;
   width: 100%;
@@ -408,7 +463,6 @@ main {
     left: 40px;
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
             transform: translate(-50%, -50%) rotate(90deg);
-    width: 450px;
     font-size: 13px;
     padding: 0px 20px;
   }
@@ -1081,12 +1135,12 @@ main {
   }
   #section__project .project__contents .project__left {
     width: 100%;
-    padding: 0px;
+    padding: 0px 20px;
   }
   #section__project .project__contents .project__left .project__left__title {
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 18px;
   }
   #section__project .project__contents .project__left .project__left__text {
@@ -1104,12 +1158,12 @@ main {
   }
   #section__project .project__contents .project__right {
     width: 100%;
-    padding: 0px;
+    padding: 0px 20px;
   }
   #section__project .project__contents .project__right .project__right__title {
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 21px;
   }
   #section__project .project__contents .project__right .project__right__text {
@@ -1220,6 +1274,151 @@ main {
     margin: 0 auto;
   }
 }
+#section__under__about {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+#section__under__about .section__under--title {
+  font-size: 40px;
+  font-family: "futura";
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 52px;
+}
+#section__under__about .under__title--ja {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック JP";
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+#section__under__about .under__about--navi {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#section__under__about .under__about--navi .under__about--list {
+  font-size: 15px;
+  font-family: "源ノ角ゴシック";
+  font-weight: 500;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  list-style: none;
+}
+#section__under__about .under__about__contents {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+}
+#section__under__about .under__about__contents .under__about__left {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+#section__under__about .under__about__contents .under__about__right {
+  width: 60%;
+}
+#section__under__about .under__about__contents .under__about__right .about__right__content {
+  width: 100%;
+}
+#section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--name {
+  width: 200px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "源ノ角ゴシック";
+  text-align: left;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  padding: 10px 10px;
+}
+#section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--text {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "源ノ角ゴシック";
+  text-align: left;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  padding: 10px 10px;
+}
+
+#section__under__works {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+#section__under__works .under__works__contents {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#section__under__works .under__works__contents .under__works__list {
+  width: 100%;
+  list-style: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 70px;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link {
+  text-decoration: none;
+  display: block;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .under__works--img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .under__works--skill {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .under__works--text {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+#section__under__works .under__works__contents .under__works__list:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+#section__under__works .scroll--btn {
+  text-align: center;
+}
+#section__under__works .scroll--btn .scroll--link {
+  display: block;
+  cursor: pointer;
+}
+
 #footer {
   width: 100%;
   height: auto;
@@ -1381,7 +1580,7 @@ main {
   #footer .copy__right {
     font-size: 13px;
     text-align: center;
-    margin-top: 17px;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
