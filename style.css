@@ -773,11 +773,19 @@ main {
   right: 246px;
   margin: 0 0 0 auto;
 }
-#section__works .works__img01 {
+#section__works .works__img--link {
+  display: block;
+  cursor: pointer;
+}
+#section__works .works__img--link .works__img--01 {
   width: 48%;
   height: auto;
 }
-#section__works .works__img02 {
+#section__works .works__img--link {
+  display: block;
+  cursor: pointer;
+}
+#section__works .works__img--link .works__img--02 {
   position: absolute;
   top: 50%;
   right: 105px;
@@ -1356,7 +1364,8 @@ main {
 
 #section__under__works {
   width: 100%;
-  background-color: #DDDDDD;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#2C2E26));
+  background: linear-gradient(#DDDDDD, #2C2E26);
   padding-top: 120px;
   padding-bottom: 70px;
 }
@@ -1376,8 +1385,6 @@ main {
 #section__under__works .under__works__contents .under__works__list {
   width: 100%;
   list-style: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   margin-bottom: 70px;
 }
 #section__under__works .under__works__contents .under__works__list .under__works--link {
@@ -1386,7 +1393,13 @@ main {
 }
 #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--img {
   width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin-bottom: 50px;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .under__works--img:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--skill {
   font-size: 14px;
@@ -1398,6 +1411,12 @@ main {
   line-height: 24px;
   margin-bottom: 20px;
 }
+#section__under__works .under__works__contents .under__works__list .under__works--link .skill02 {
+  color: #dfdfdf;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .skill03 {
+  color: #ffffff;
+}
 #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--text {
   font-size: 14px;
   font-family: "源ノ角ゴシック";
@@ -1407,16 +1426,101 @@ main {
   letter-spacing: 0.1em;
   line-height: 28px;
 }
-#section__under__works .under__works__contents .under__works__list:hover {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+#section__under__works .under__works__contents .under__works__list .under__works--link .works__text--02 {
+  color: #dfdfdf;
+}
+#section__under__works .under__works__contents .under__works__list .under__works--link .works__text--03 {
+  color: #ffffff;
 }
 #section__under__works .scroll--btn {
   text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 #section__under__works .scroll--btn .scroll--link {
   display: block;
   cursor: pointer;
+}
+#section__under__works .scroll--btn:hover {
+  -webkit-transform: translate(0px, 15px);
+          transform: translate(0px, 15px);
+}
+
+#section__under__news {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#2C2E26));
+  background: linear-gradient(#333333, #2C2E26);
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+#section__under__news .section__under--title {
+  color: #ffffff;
+}
+#section__under__news .under__title--ja {
+  color: #ffffff;
+}
+#section__under__news .under__news__list {
+  width: 100%;
+  list-style: none;
+}
+#section__under__news .under__news__list .under__news__item {
+  padding: 30px 0px;
+  border-bottom: 1px dotted #ffffff;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  text-decoration: none;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link .news__img--box {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link .news__img--box .news__item--img:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link .news__item--box {
+  width: 60%;
+  padding: 10px 0px;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link .news__item--box .news__item--text {
+  font-size: 20px;
+  font-family: "源ノ角ゴシック";
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+#section__under__news .under__news__list .under__news__item .news__item--link .news__item--box .news__item--date {
+  font-size: 18px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+#section__under__news .under__news__list .under__news__item:last-child {
+  border: none;
 }
 
 #footer {

@@ -711,16 +711,24 @@ main {
       margin: 0 0 0 auto;
     }  
   }
-  .works__img01 {
-    width: 48%;
-    height: auto;
+  .works__img--link {
+    display: block;
+    cursor: pointer;
+    .works__img--01 {
+      width: 48%;
+      height: auto;
+    }  
   }
-  .works__img02 {
-    position: absolute;
-    top: 50%;
-    right: 105px;
-    width: 47%;
-    height: 400px;
+  .works__img--link {
+    display: block;
+    cursor: pointer;
+    .works__img--02 {
+      position: absolute;
+      top: 50%;
+      right: 105px;
+      width: 47%;
+      height: 400px;
+    }  
   }
 }
 @media screen and(max-width:768px){
@@ -1238,7 +1246,7 @@ main {
 //section__under__works
 #section__under__works {
   width: 100%;
-  background-color: $c-bgcolor02;
+  background: linear-gradient( $c-bgcolor02, $c-bgcolor01);
   padding-top:120px ;
   padding-bottom: 70px;
   .under__works__contents {
@@ -1249,14 +1257,17 @@ main {
     .under__works__list {
       width: 100%;
       list-style: none;
-      transition: all 0.3s;
       margin-bottom: 70px;
       .under__works--link {
         text-decoration: none;
         display: block;
         .under__works--img {
           width: 100%;
+          transition: all 0.3s;
           margin-bottom: 50px;
+          &:hover {
+            filter: brightness(0.8);
+          }
         }
         .under__works--skill {
           font-size: 14px;
@@ -1268,6 +1279,12 @@ main {
           line-height: 24px;
           margin-bottom: 20px;
         }
+        .skill02 {
+          color: #dfdfdf;
+        }
+        .skill03 {
+          color: $c-white;
+        }
         .under__works--text {
           font-size: 14px;
           font-family: "源ノ角ゴシック";
@@ -1277,17 +1294,93 @@ main {
           letter-spacing: 0.1em;
           line-height: 28px;
         }
-      }
-      &:hover {
-        filter: brightness(0.8);
+        .works__text--02 {
+          color: #dfdfdf;
+        }
+        .works__text--03 {
+          color: $c-white;
+        }
       }
     }
   }
   .scroll--btn {
     text-align: center;
+    transition: all 0.5s;
     .scroll--link {
       display: block;
       cursor: pointer;
+    }
+    &:hover {
+      transform: translate(0px,15px);
+    }
+  }
+}
+
+//section__under__news
+#section__under__news {
+  width: 100%;
+  background: linear-gradient( #333333, $c-bgcolor01);
+  padding-top: 130px;
+  padding-bottom: 70px;
+  .section__under--title {
+    color: $c-white;
+  }
+  .under__title--ja {
+    color: $c-white;
+  }
+  .under__news__list {
+    width: 100%;
+    list-style: none;
+    .under__news__item {
+      padding:30px 0px;
+      border-bottom: 1px dotted $c-white;
+      .news__item--link {
+        display: flex;
+        gap: 60px;
+        text-decoration: none;
+        .news__img--box {
+          width: 350px;
+          height: auto;
+          margin: 0 auto;
+          overflow: hidden;
+          transform: all 0.5s;
+          .news__item--img {
+            &:hover {
+              filter: brightness(0.7);
+              transform:scale(1.2,1.2);
+              transition: all 0.5s;
+            }
+          }  
+        }
+        .news__item--box {
+          width: 60%;
+          padding: 10px 0px;
+          .news__item--text {
+            font-size: 20px;
+            font-family: "源ノ角ゴシック";
+            font-weight: bold;
+            color: $c-white;
+            text-align: left;
+            letter-spacing: 0.1em;
+            line-height: 28px;
+          }
+          .news__item--date {
+            font-size: 18px;
+            font-family: "源ノ角ゴシック";
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: $c-white;
+            text-align: left;
+            letter-spacing: 0.1em;
+            line-height: 28px;
+          }
+        }
+      }
+      &:last-child {
+        border: none;
+      }
     }
   }
 }
