@@ -711,15 +711,20 @@ main {
       margin: 0 0 0 auto;
     }  
   }
-  .works__img--link {
+  .works__img--link01 {
     display: block;
     cursor: pointer;
     .works__img--01 {
       width: 48%;
       height: auto;
+      margin: 0 auto;
+      transition: all 0.3s;
+      &:hover {
+       filter: brightness(0.8);
+      }
     }  
   }
-  .works__img--link {
+  .works__img--link02 {
     display: block;
     cursor: pointer;
     .works__img--02 {
@@ -728,6 +733,10 @@ main {
       right: 105px;
       width: 47%;
       height: 400px;
+      transition: all 0.3s;
+      &:hover {
+        filter: brightness(0.8);
+      }
     }  
   }
 }
@@ -754,25 +763,19 @@ main {
           margin: 0 auto;
         }    
       }
-      .works__img01 {
+      .works__img--01 {
         width: 100%;
         height: auto;
-        order: 1;
-        transition: all 0.3s;
         &:hover {
-          filter: brightness(0.8);
+          width: 100%;
+          height: auto;
         }
       }
-      .works__img02 {
+      .works__img--02 {
         position: static;
         width: 100%;
-        order: 2;
         height: auto;
         margin-bottom: 20px;
-        transition: all 0.3s;
-        &:hover {
-          filter: brightness(0.8);
-        }
       }  
     }
   }  
@@ -1303,16 +1306,16 @@ main {
       }
     }
   }
-  .scroll--btn {
-    text-align: center;
-    transition: all 0.5s;
-    .scroll--link {
-      display: block;
-      cursor: pointer;
-    }
+  .scroll--link {
+    width: 50px;
+    height: 50px;
+    display: block;
+    transition: all 0.5s;  
+    cursor: pointer;
+    margin: 0 auto;
     &:hover {
       transform: translate(0px,15px);
-    }
+    }  
   }
 }
 
@@ -1381,6 +1384,120 @@ main {
       &:last-child {
         border: none;
       }
+    }
+  }
+}
+
+//section__under__gallery 
+#section__under__gallery {
+  width: 100%;
+  background-color: $c-bgcolor02;
+  padding-top: 130px;
+  padding-bottom: 70px;
+  .under__gallery__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 23px;
+    margin-bottom: 65px;
+    .under__gallery__item {
+      width: calc(calc(100% - 69px) / 4);
+    }
+  }
+  .view__more {
+    width: 80px;
+    font-size: 15px;
+    font-family: "源ノ角ゴシック";
+    font-weight: normal;
+    color: $c-text;
+    border-bottom: 1px solid $c-text;
+    display: block;
+    text-decoration:none;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    transition: all 0.3s;
+    margin: 0 auto;
+    &:hover {
+      width: 100px;
+    }
+  }
+}
+
+//section__under__contact
+#section__under__contact {
+  width: 100%;
+  background: linear-gradient( #333333, $c-bgcolor01);
+  padding-top: 130px;
+  padding-bottom: 70px;
+  .section__under--title {
+    color: $c-white;
+  }
+  .under__title--ja {
+    color: $c-white;
+  }
+  .under__contact__form {
+    width: 100%;
+    margin-bottom: 60px;
+    tr {
+      .under__contact__item {
+        font-size: 14px;
+        font-family: "源ノ角ゴシック";
+        font-weight: normal;
+        color: $c-white;
+        letter-spacing: 0.01em;
+        line-height: 28px;
+        text-align: left;
+        display: block;
+        .item--sign {
+          color: red;
+          margin-left: 3px;
+        }
+      }
+      .under__contact__body {
+        display: block;
+        margin-bottom: 20px;
+        .form--text {
+          width: 535px;
+          height: 30px;
+          font-size: 16px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          letter-spacing: 0.1em;
+          line-height: 25px;
+        }
+        .form--textarea {
+          width: 600px;
+          height: 265px;
+          font-size: 16px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          letter-spacing: 0.1em;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .contact--btn {
+    width: 280px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "源ノ角ゴシック";
+    display: block;
+    color: $c-white;
+    text-decoration: none;
+    border: 1px solid $c-white;
+    letter-spacing: 0.05em;
+    text-align: center;
+    transition: all 0.3s;
+    padding:20px 0px;
+    margin: 0 auto;
+    &:hover {
+      color: $c-bgcolor01;
+      box-shadow: 3px 3px 6px $c-text;
+      background-color: $c-white;
     }
   }
 }

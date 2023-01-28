@@ -44,58 +44,47 @@
   
   <!--main-->
   <main>
-    <div id="section__under__news" class="inner">
-      <h2 class="section__under--title">News</h2>
-      <h3 class="under__title--ja">お知らせ</h3>
-      <ul class="under__news__list">
-        <li class="under__news__item">
-          <a class="news__item--link" href="#">
-            <div class="news__img--box">
-              <img class="news__item--img" src="img/news_01.jpg" alt="ニュースの下層ページ画像です。">
-            </div>
-            <div class="news__item--box">
-              <p class="news__item--text">デザイン・フロントエンドコーディングを学び始める。</p>
-              <p class="news__item--date"><i class="fa-solid fa-calendar-days"></i>2021.09</p>
-            </div>
-          </a>
-        </li>
-        <li class="under__news__item">
-          <a class="news__item--link" href="#">
-            <div class="news__img--box">
-              <img class="news__item--img" src="img/news_02.jpg" alt="ニュースの下層ページ画像です。">
-            </div>
-            <div class="news__item--box">
-              <p class="news__item--text">転職に向けて動き出す。</p>
-              <p class="news__item--date"><i class="fa-solid fa-calendar-days"></i>2022.08</p>
-            </div>
-          </a>
-        </li>
-        <li class="under__news__item">
-          <a class="news__item--link" href="#">
-            <div class="news__img--box">
-              <img class="news__item--img" src="img/news_03.jpg" alt="ニュースの下層ページ画像です。">
-            </div>
-            <div class="news__item--box">
-              <p class="news__item--text">会社を退職する。</p>
-              <p class="news__item--date"><i class="fa-solid fa-calendar-days"></i>2022.11</p>
-            </div>
-          </a>
-        </li>
-        <li class="under__news__item">
-          <a class="news__item--link" href="#">
-            <div class="news__img--box">
-              <img class="news__item--img" src="img/news_04.jpg" alt="ニュースの下層ページ画像です。">
-            </div>
-            <div class="news__item--box">
-              <p class="news__item--text">現在に至る。</p>
-              <p class="news__item--date"><i class="fa-solid fa-calendar-days"></i>2023.01</p>
-            </div>
-          </a>
-        </li>
-      </ul>
+    <div id="section__under__contact" class="inner">
+      <h2 class="section__under--title">Contact</h2>
+      <h3 class="under__title--ja">お問い合わせ</h3>
+      <table class="under__contact__form">
+        <tr>
+          <th class="under__contact__item">氏名 (貴社名) </th>
+          <td class="under__contact__body">
+            <input type="text" name="name" class="form--text">
+          </td>
+        </tr>
 
+        <tr>
+          <th class="under__contact__item">お名前<span class="item--sign">*</span></th>
+          <td class="under__contact__body">
+            <input type="text" name="name" class="form--text">
+          </td>
+        </tr>
+
+        <tr>
+          <th class="under__contact__item">メールアドレス<span class="item--sign">*</span></th>
+          <td class="under__contact__body">
+            <input type="mail" name="mail" class="form--text">
+          </td>
+        </tr>
+
+        <tr>
+          <th class="under__contact__item">電話番号</th>
+          <td class="under__contact__body">
+            <input type="tel" name="tel" class="form--text">
+          </td>
+        </tr>
+
+        <tr>
+          <th class="under__contact__item">お問い合わせ内容<span class="item--sign">*</span></th>
+          <td class="under__contact__body">
+            <textarea name="お問い合わせ" class="form--textarea"></textarea>
+          </td>
+        </tr>
+      </table>
+      <a class="contact--btn" href="#">内容を送信する</a>
     </div>
-
   </main>
 
   <!--ここからフッター-->

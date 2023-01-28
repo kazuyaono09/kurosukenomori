@@ -773,24 +773,37 @@ main {
   right: 246px;
   margin: 0 0 0 auto;
 }
-#section__works .works__img--link {
+#section__works .works__img--link01 {
   display: block;
   cursor: pointer;
 }
-#section__works .works__img--link .works__img--01 {
+#section__works .works__img--link01 .works__img--01 {
   width: 48%;
   height: auto;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-#section__works .works__img--link {
+#section__works .works__img--link01 .works__img--01:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+#section__works .works__img--link02 {
   display: block;
   cursor: pointer;
 }
-#section__works .works__img--link .works__img--02 {
+#section__works .works__img--link02 .works__img--02 {
   position: absolute;
   top: 50%;
   right: 105px;
   width: 47%;
   height: 400px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#section__works .works__img--link02 .works__img--02:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 @media screen and (max-width: 768px) {
@@ -823,33 +836,19 @@ main {
     position: static;
     margin: 0 auto;
   }
-  #section__works .works__content .works__img01 {
+  #section__works .works__content .works__img--01 {
     width: 100%;
     height: auto;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
   }
-  #section__works .works__content .works__img01:hover {
-    -webkit-filter: brightness(0.8);
-            filter: brightness(0.8);
+  #section__works .works__content .works__img--01:hover {
+    width: 100%;
+    height: auto;
   }
-  #section__works .works__content .works__img02 {
+  #section__works .works__content .works__img--02 {
     position: static;
     width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     height: auto;
     margin-bottom: 20px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #section__works .works__content .works__img02:hover {
-    -webkit-filter: brightness(0.8);
-            filter: brightness(0.8);
   }
 }
 #section__news {
@@ -1432,16 +1431,16 @@ main {
 #section__under__works .under__works__contents .under__works__list .under__works--link .works__text--03 {
   color: #ffffff;
 }
-#section__under__works .scroll--btn {
-  text-align: center;
+#section__under__works .scroll--link {
+  width: 50px;
+  height: 50px;
+  display: block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-#section__under__works .scroll--btn .scroll--link {
-  display: block;
   cursor: pointer;
+  margin: 0 auto;
 }
-#section__under__works .scroll--btn:hover {
+#section__under__works .scroll--link:hover {
   -webkit-transform: translate(0px, 15px);
           transform: translate(0px, 15px);
 }
@@ -1521,6 +1520,123 @@ main {
 }
 #section__under__news .under__news__list .under__news__item:last-child {
   border: none;
+}
+
+#section__under__gallery {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+#section__under__gallery .under__gallery__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  gap: 23px;
+  margin-bottom: 65px;
+}
+#section__under__gallery .under__gallery__list .under__gallery__item {
+  width: calc(calc(100% - 69px) / 4);
+}
+#section__under__gallery .view__more {
+  width: 80px;
+  font-size: 15px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #333333;
+  border-bottom: 1px solid #333333;
+  display: block;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+#section__under__gallery .view__more:hover {
+  width: 100px;
+}
+
+#section__under__contact {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#2C2E26));
+  background: linear-gradient(#333333, #2C2E26);
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+#section__under__contact .section__under--title {
+  color: #ffffff;
+}
+#section__under__contact .under__title--ja {
+  color: #ffffff;
+}
+#section__under__contact .under__contact__form {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#section__under__contact .under__contact__form tr .under__contact__item {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  line-height: 28px;
+  text-align: left;
+  display: block;
+}
+#section__under__contact .under__contact__form tr .under__contact__item .item--sign {
+  color: red;
+  margin-left: 3px;
+}
+#section__under__contact .under__contact__form tr .under__contact__body {
+  display: block;
+  margin-bottom: 20px;
+}
+#section__under__contact .under__contact__form tr .under__contact__body .form--text {
+  width: 535px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+#section__under__contact .under__contact__form tr .under__contact__body .form--textarea {
+  width: 600px;
+  height: 265px;
+  font-size: 16px;
+  font-family: "源ノ角ゴシック";
+  font-weight: normal;
+  color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+#section__under__contact .contact--btn {
+  width: 280px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "源ノ角ゴシック";
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.05em;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+#section__under__contact .contact--btn:hover {
+  color: #2C2E26;
+  -webkit-box-shadow: 3px 3px 6px #333333;
+          box-shadow: 3px 3px 6px #333333;
+  background-color: #ffffff;
 }
 
 #footer {
