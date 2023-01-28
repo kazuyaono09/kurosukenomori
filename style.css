@@ -85,7 +85,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .section__title {
+  .section__under--title {
     font-size: 30px;
     font-family: "futura";
     font-weight: 300;
@@ -108,7 +108,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .title__ja {
+  .under__title--ja {
     font-size: 12px;
     font-family: "源ノ角ゴシック JP";
     font-weight: 200;
@@ -1287,25 +1287,6 @@ main {
   padding-top: 120px;
   padding-bottom: 70px;
 }
-#section__under__about .section__under--title {
-  font-size: 40px;
-  font-family: "futura";
-  font-weight: 500;
-  color: #333333;
-  text-align: left;
-  letter-spacing: 0.1em;
-  line-height: 52px;
-}
-#section__under__about .under__title--ja {
-  font-size: 14px;
-  font-family: "源ノ角ゴシック JP";
-  font-weight: 400;
-  color: #333333;
-  text-align: left;
-  letter-spacing: 0.1em;
-  line-height: 24px;
-  margin-bottom: 35px;
-}
 #section__under__about .under__about--navi {
   width: 100%;
   margin-bottom: 40px;
@@ -1361,6 +1342,52 @@ main {
   padding: 10px 10px;
 }
 
+@media screen and (max-width: 768px) {
+  #section__under__about {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__about .under__about--navi {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #section__under__about .under__about--navi .under__about--list {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  #section__under__about .under__about__contents {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  #section__under__about .under__about__contents .under__about__left {
+    width: 200px;
+    height: 200px;
+  }
+  #section__under__about .under__about__contents .under__about__right {
+    width: 100%;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content {
+    width: 100%;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--name {
+    width: 160px;
+    font-size: 14px;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--text {
+    font-size: 14px;
+  }
+}
 #section__under__works {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#2C2E26));
@@ -1445,6 +1472,34 @@ main {
           transform: translate(0px, 15px);
 }
 
+@media screen and (max-width: 768px) {
+  #section__under__works {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__works .under__works__contents {
+    width: 100%;
+  }
+  #section__under__works .under__works__contents .under__works__list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--img {
+    margin-bottom: 35px;
+  }
+  #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--skill {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #section__under__works .under__works__contents .under__works__list .under__works--link .under__works--text {
+    font-size: 14px;
+  }
+  #section__under__works .scroll--link {
+    width: 30px;
+    height: 30px;
+  }
+}
 #section__under__news {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#2C2E26));
@@ -1522,6 +1577,47 @@ main {
   border: none;
 }
 
+@media screen and (max-width: 768px) {
+  #section__under__news {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__news .under__news__list {
+    width: 100%;
+  }
+  #section__under__news .under__news__list .under__news__item {
+    padding: 40px 0px;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link .news__img--box {
+    width: 100%;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link .news__img--box .news__item--img {
+    width: 100%;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link .news__item--box {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link .news__item--box .news__item--text {
+    font-size: 16px;
+  }
+  #section__under__news .under__news__list .under__news__item .news__item--link .news__item--box .news__item--date {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
 #section__under__gallery {
   width: 100%;
   background-color: #DDDDDD;
@@ -1561,6 +1657,31 @@ main {
   width: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  #section__under__gallery {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__gallery .under__gallery__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    gap: 23px;
+    margin-bottom: 50px;
+  }
+  #section__under__gallery .under__gallery__list .under__gallery__item {
+    width: calc(calc(100% - 23px) / 2);
+  }
+  #section__under__gallery .view__more {
+    width: 80px;
+    font-size: 14px;
+  }
+}
 #section__under__contact {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#2C2E26));
@@ -1639,6 +1760,46 @@ main {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  #section__under__contact {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  #section__under__contact .under__contact__form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #section__under__contact .under__contact__form tr {
+    width: 100%;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__item {
+    font-size: 14px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__item .item--sign {
+    color: red;
+    margin-left: 3px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body .form--text {
+    width: 100%;
+    height: 28px;
+    font-size: 14px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body .form--textarea {
+    max-width: 400px;
+    height: 265px;
+    font-size: 14px;
+  }
+  #section__under__contact .contact--btn {
+    width: 240px;
+    font-size: 14px;
+  }
+}
 #footer {
   width: 100%;
   height: auto;
