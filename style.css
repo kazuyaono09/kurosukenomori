@@ -247,11 +247,11 @@ main {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
-.header .header__menu--bg {
-  position: absolute;
+.header .header__navi {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   visibility: hidden;
   background-color: #21221c;
@@ -263,26 +263,12 @@ main {
   cursor: pointer;
   z-index: -10;
 }
-.header .header__menu--bg.active__bg {
-  visibility: visible;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 1;
-}
-.header .header__navi {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  visibility: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  padding: 250px 0px;
-  cursor: pointer;
-  z-index: -10;
-}
 .header .header__navi .header__navi__menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,29 +303,11 @@ main {
 }
 .header .header__navi.active__navi {
   visibility: visible;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    width: 100%;
-    height: 75px;
-  }
-  .header .header__logo__link {
-    display: block;
-    z-index: 10;
-  }
-  .header .header__logo__link .header__logo {
-    width: 61px;
-    height: 52px;
-  }
-  .header .humbergar {
-    position: relative;
-  }
-  .header .header__navi {
-    padding: 200px 0px;
-  }
-}
 @media screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -528,7 +496,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #DDDDDD;
+  background: #DDDDDD;
   padding-top: 113px;
   padding-bottom: 200px;
 }
@@ -1059,6 +1027,7 @@ main {
   margin-bottom: 35px;
 }
 #section__project .project__contents .project__left .btn--type01 {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,6 +1080,7 @@ main {
   margin-bottom: 35px;
 }
 #section__project .project__contents .project__right .btn--type01 {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1502,8 +1472,8 @@ main {
 }
 #section__under__news {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#2C2E26));
-  background: linear-gradient(#333333, #2C2E26);
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#2C2E26));
+  background: linear-gradient(#DDDDDD, #2C2E26);
   padding-top: 130px;
   padding-bottom: 70px;
 }

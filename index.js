@@ -1,19 +1,17 @@
 const menuBtn = document.querySelector(".humbergar");
-const menuBg = document.querySelector(".header__menu--bg");
-const naviMenu = document.querySelector(".header__navi");
+const naviMenu = document.querySelector(".header__navi");  //クリックされた時のメニュー画面
 const menuItems = document.querySelectorAll(".navi__menu__item");
 
-
+//humbergar--menuをクリックした時の動作
 menuBtn.addEventListener("click" , function() {
-  this.classList.toggle("active__humbergar");
-  menuBg.classList.toggle("active__bg");
+  this.classList.toggle("active__humbergar"); //ボタンの切り替え動作
   naviMenu.classList.toggle("active__navi");
   menuItems = classList.add("active__item");
   console.log(menuItems);
 });
 
-
-naviMenu.addEventListener("click" , () => {
-menuBg.classList.remove("active__bg");
+//navimenuの背景をクリックした時の動作
+naviMenu.addEventListener("click" , function() {
+this.classList.remove("active__navi");
+menuBtn.classList.toggle("active__humbergar");
 });
-//header__naviがpaddingで大きさ指定しているためmenu__bgとレイアウトが重なってバックグラウンドが押せない。
