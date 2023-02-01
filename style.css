@@ -29,6 +29,21 @@ main {
     padding: 0px 20px;
   }
 }
+.section {
+  visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+}
+.section.section--active {
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 .section__title {
   font-size: 40px;
   font-family: "futura";
