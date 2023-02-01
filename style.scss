@@ -450,9 +450,11 @@ main {
   justify-content: space-between;
   background: $c-bgcolor02;
   padding-top: 113px;
+  padding-left: 200px;
+  padding-right: 200px;
   padding-bottom: 200px;
   .about__left {
-    width: 50%;
+    width: 45%;
     .section__title {
       font-size: 40px;
       font-family: "futura";
@@ -484,11 +486,13 @@ main {
     }
   }
   .about__right {
-    width: 358px;
-    height: 358px;
-    border-radius: 50%;
-    background-color: $c-white;
+    width: 320px;
+    height: 320px;
     margin-right: 60px;
+    .about__right--img {
+      box-shadow: 6px 6px 20px #656565;
+      border-radius: 50%;
+    }
   }
 }
 @media screen and(max-width:768px){
@@ -567,7 +571,8 @@ main {
           display: flex;
           align-items: center;
           justify-content: center;
-          border:1px solid $c-white;
+          border:5px solid $c-bgcolor02;
+          border-radius: 0px;
           margin: 0 0 0 auto;
         }
         .contents__item--title {
@@ -579,7 +584,6 @@ main {
           letter-spacing: 0.01em;
           line-height: 24px;
           background-color: #1d1d1d;
-
           padding: 9px 30px 9px 20px;
           margin-top: -21px;
           margin-bottom: 32px;
@@ -1159,10 +1163,12 @@ main {
     align-items: center;
     gap: 80px;
     .under__about__left {
-      width: 230px;
-      height: 230px;
-      border-radius: 50%;
-      background-color: $c-white;
+      width: 200px;
+      height: 200px;
+      .about__left--img {
+        border-radius: 50%;
+        box-shadow: 6px 6px 20px #656565;
+      }
     }
     .under__about__right {
       width: 60%;
@@ -1460,6 +1466,13 @@ main {
     margin-bottom: 65px;
     .under__gallery__item {
       width: calc(calc(100% - 69px) / 4);
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto;
+      .under__gallery__img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
   .view__more {
