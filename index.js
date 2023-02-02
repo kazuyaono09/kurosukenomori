@@ -28,7 +28,7 @@ function animationScroll() {
 
   sections.forEach((section) => {
     const offsetTop = section.offsetTop;//要素の縦方向の位置。
-    const inviewHeight = 250;
+    const inviewHeight = 200;
 
     if(scrollY + windowHeight > offsetTop + inviewHeight) {
       section.classList.add("section--active");

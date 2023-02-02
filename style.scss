@@ -510,6 +510,8 @@ main {
     display: flex;
     align-items: flex-start;
     flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;  
     padding-top: 70px;
     padding-bottom: 130px;
     .about__left {
@@ -552,7 +554,7 @@ main {
 #section__service {
   width: 100%;
   background-color: $c-bgcolor01;
-  clip-path: polygon(0 100%, 100% 100%, 100% 10%, 0 0);
+  clip-path: polygon(0 100%, 100% 100%, 100% 7%, 0 0);
   padding-top: 100px;
   padding-bottom: 140px;
   margin-top: -90px;
@@ -766,7 +768,6 @@ main {
 #section__news {
   width: 100%;
   background-color: $c-bgcolor01;
-  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 0);
   padding-top: 70px;
   padding-bottom: 160px;
   .section__title {
@@ -844,9 +845,8 @@ main {
 @media screen and(max-width:768px){
   #section__news {
     width: 100%;
-    clip-path: polygon(0 100%, 100% 97%, 100% 0, 0 0);
     padding-top: 70px;
-    padding-bottom: 110px;
+    padding-bottom: 140px;
     .news__lists {
       width: 100%;
       padding: 0px;
@@ -888,7 +888,8 @@ main {
 #section__project {
   width: 100%;
   background-color: $c-bgcolor02;
-  padding-top: 150px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 7%);
+  padding-top: 120px;
   padding-bottom: 100px;
   margin-top: -80px;
   .section__title {
@@ -903,16 +904,16 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 110px;
     .project__left {
       width: 50%;
       padding: 0px 50px 50px 50px;
       .project__left__title {
-        font-size: 26px;
+        font-size: 24px;
         font-family: "futura";
         font-weight: normal;
         display: flex;
         align-items: center;
+        gap: 3px;
         color: $c-text;
         text-align: left;
         line-height: 24px;
@@ -951,11 +952,12 @@ main {
       width: 50%;
       padding: 0px 50px 50px 50px;
       .project__right__title {
-        font-size: 26px;
+        font-size: 24px;
         font-family: "futura";
         font-weight: normal;
         display: flex;
         align-items: center;
+        gap: 3px;
         color: $c-text;
         text-align: left;
         line-height: 24px;
@@ -995,7 +997,8 @@ main {
 @media screen and(max-width:768px){
   #section__project {
     width: 100%;
-    padding-top: 130px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 3%);
+    padding-top: 90px;
     padding-bottom: 100px;
     .project__contents {
       width: 100%;
@@ -1475,7 +1478,7 @@ main {
     margin-bottom: 65px;
     .under__gallery__item {
       width: calc(calc(100% - 69px) / 4);
-      height: 300px;
+      height: 260px;
       overflow: hidden;
       margin: 0 auto;
       .under__gallery__img {
