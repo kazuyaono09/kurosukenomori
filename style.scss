@@ -856,7 +856,7 @@ main {
         border-top: 1px solid $c-white;
         list-style: none;
         transition: all 0.3s;
-        .list__item--link {
+      .list__item--link {
           display: flex;
           align-items: center;
           gap: 30px;
@@ -1477,6 +1477,8 @@ main {
     gap: 23px;
     margin-bottom: 65px;
     .under__gallery__item {
+      max-width: 300px;
+      max-height: 300px;
       width: calc(calc(100% - 69px) / 4);
       height: 260px;
       overflow: hidden;
@@ -1518,7 +1520,10 @@ main {
       gap: 23px;
       margin-bottom: 50px;
       .under__gallery__item {
+        max-width: 210px;
+        max-height: 210px;
         width: calc(calc(100% - 23px) / 2);
+        height: 210px;
       }
     }
     .view__more {

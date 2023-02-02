@@ -1462,6 +1462,8 @@ main {
   margin-bottom: 65px;
 }
 #section__under__gallery .under__gallery__list .under__gallery__item {
+  max-width: 300px;
+  max-height: 300px;
   width: calc((100% - 69px) / 4);
   height: 260px;
   overflow: hidden;
@@ -1505,7 +1507,10 @@ main {
     margin-bottom: 50px;
   }
   #section__under__gallery .under__gallery__list .under__gallery__item {
+    max-width: 210px;
+    max-height: 210px;
     width: calc((100% - 23px) / 2);
+    height: 210px;
   }
   #section__under__gallery .view__more {
     width: 80px;
@@ -1778,4 +1783,5 @@ main {
     text-align: center;
     margin-top: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
