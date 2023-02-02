@@ -1634,6 +1634,9 @@ main {
       width: 100px;
     }
   }
+  .scroll--link {
+    display: none;
+  }
 }
 @media screen and(max-width:768px){
   #section__under__gallery {
@@ -1658,6 +1661,10 @@ main {
       width: 80px;
       font-size: 14px;
     }
+    .scroll--link {
+      display: none;
+    }
+
   }  
 }
 @media screen and(max-width:425px){

@@ -1617,6 +1617,9 @@ main {
 #section__under__gallery .view__more:hover {
   width: 100px;
 }
+#section__under__gallery .scroll--link {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   #section__under__gallery {
@@ -1641,6 +1644,9 @@ main {
   #section__under__gallery .view__more {
     width: 80px;
     font-size: 14px;
+  }
+  #section__under__gallery .scroll--link {
+    display: none;
   }
 }
 @media screen and (max-width: 425px) {
