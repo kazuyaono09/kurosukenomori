@@ -348,19 +348,6 @@ main {
   text-align: center;
   padding: 0px 105px;
 }
-.main__visual .main__visual__textB {
-  position: absolute;
-  top: 50%;
-  left: 105px;
-  transform: translate(-50%, -50%) rotate(90deg);
-  font-size: 16px;
-  font-family: Noto Sans;
-  font-weight: 200;
-  color: #ffffff;
-  letter-spacing: 0.1em;
-  line-height: 28px;
-  padding: 0px 105px;
-}
 .main__visual .scroll__text {
   position: absolute;
   top: 80%;
@@ -383,7 +370,6 @@ main {
   background-color: #ffffff;
   -webkit-animation: scroll 1.5s ease infinite;
           animation: scroll 1.5s ease infinite;
-  z-index: 50;
 }
 
 @media screen and (max-width: 768px) {
@@ -405,14 +391,6 @@ main {
     transform: translate(-50%, -50%);
     font-size: 13px;
     font-weight: 200;
-    padding: 0px 20px;
-  }
-  .main__visual .main__visual__textB {
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translate(-50%, -50%) rotate(90deg);
-    font-size: 13px;
     padding: 0px 20px;
   }
   .main__visual .scroll__text {
@@ -439,8 +417,8 @@ main {
     max-height: calc(100% - 75px);
   }
   .main__visual .main__visual__img {
-    width: 230px;
-    height: 195px;
+    width: 200px;
+    height: 165px;
   }
   .main__visual .main__visual__textA {
     width: 70%;
@@ -451,12 +429,6 @@ main {
     font-size: 13px;
     font-weight: 200;
     padding: 0px 20px;
-  }
-  .main__visual .main__visual__textB {
-    width: 470px;
-    position: absolute;
-    top: 50%;
-    left: 20px;
   }
   .main__visual .scroll__text {
     position: absolute;
@@ -472,6 +444,7 @@ main {
     top: 50%;
     right: 5px;
     width: 120px;
+    height: 1px;
   }
 }
 @-webkit-keyframes scroll {
