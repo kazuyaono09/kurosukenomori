@@ -51,7 +51,7 @@ main {
   color: #333333;
   text-align: left;
   letter-spacing: 0.1em;
-  line-height: 52px;
+  line-height: 50px;
 }
 
 @media screen and (max-width: 768px) {
