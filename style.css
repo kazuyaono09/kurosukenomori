@@ -153,8 +153,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .btn--type01 {
-    max-width: 300px;
-    width: 100%;
+    width: 250px;
     font-size: 13px;
     font-weight: 300;
     padding: 23px 0px;
@@ -211,7 +210,6 @@ main {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  z-index: 10;
 }
 .header .humbergar .bar--01 {
   position: absolute;
@@ -309,6 +307,12 @@ main {
   }
   .header .header__navi {
     padding: 200px 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    width: 100%;
+    height: 70px;
   }
 }
 .main__visual {
@@ -423,7 +427,50 @@ main {
     content: "";
     position: absolute;
     top: 50%;
-    left: 110%;
+    right: 20px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__visual {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: calc(100% - 75px);
+  }
+  .main__visual .main__visual__img {
+    width: 230px;
+    height: 195px;
+  }
+  .main__visual .main__visual__textA {
+    width: 70%;
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-weight: 200;
+    padding: 0px 20px;
+  }
+  .main__visual .main__visual__textB {
+    width: 470px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+  }
+  .main__visual .scroll__text {
+    position: absolute;
+    top: 80%;
+    right: 5px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .main__visual .scroll__text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
     width: 120px;
   }
 }
@@ -526,6 +573,7 @@ main {
     margin-top: 30px;
   }
   #section__about .about__left .section__title {
+    font-size: 32px;
     text-align: center;
     line-height: 52px;
   }
@@ -559,8 +607,8 @@ main {
   background-color: #2C2E26;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 7%, 0 0);
           clip-path: polygon(0 100%, 100% 100%, 100% 7%, 0 0);
-  padding-top: 100px;
-  padding-bottom: 140px;
+  padding-top: 80px;
+  padding-bottom: 120px;
   margin-top: -90px;
 }
 #section__service .section__title {
@@ -662,6 +710,15 @@ main {
   }
   #section__service .service__contents .service__contents__list .service__list__item:nth-child(3) {
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #section__service {
+    width: 100%;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 2%, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 2%, 0 0);
+    padding-bottom: 50px;
+    margin-top: -80px;
   }
 }
 #section__works {
@@ -1056,6 +1113,61 @@ main {
     gap: 13px;
   }
 }
+@media screen and (max-width: 375px) {
+  #section__project {
+    width: 100%;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 2%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 2%);
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  #section__project .project__contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #section__project .project__contents .project__left {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  #section__project .project__contents .project__left .project__left__title {
+    font-size: 19px;
+    gap: 5px;
+    margin-bottom: 23px;
+  }
+  #section__project .project__contents .project__left .project__left__text {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  #section__project .project__contents .project__left .project__left__info {
+    font-size: 15px;
+  }
+  #section__project .project__contents .project__right {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  #section__project .project__contents .project__right .project__right__title {
+    font-size: 19px;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 23px;
+  }
+  #section__project .project__contents .project__right .project__right__text {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  #section__project .project__contents .project__right .project__right__info {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  #section__project .project__contents .project__right .btn--type01 {
+    margin: 0 auto;
+    gap: 13px;
+  }
+}
 #section__contact {
   position: relative;
   width: 100%;
@@ -1131,6 +1243,7 @@ main {
     line-height: 40px;
   }
   #section__contact .contact__content {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1138,7 +1251,7 @@ main {
     display: block;
   }
   #section__contact .contact__content .contact__text {
-    width: 400px;
+    width: 100%;
     font-size: 13px;
     text-align: center;
     margin-bottom: 25px;
@@ -1240,6 +1353,46 @@ main {
   #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--name {
     width: 160px;
     font-size: 14px;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #section__under__about {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__about .under__about--navi {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #section__under__about .under__about--navi .under__about--list {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  #section__under__about .under__about__contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  #section__under__about .under__about__contents .under__about__left {
+    width: 200px;
+    height: 200px;
+  }
+  #section__under__about .under__about__contents .under__about__right {
+    width: 100%;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content {
+    width: 100%;
+  }
+  #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--name {
+    width: 85px;
+    font-size: 14px;
+    padding: 5px 5px;
   }
   #section__under__about .under__about__contents .under__about__right .about__right__content .right__content__item .contenm__item--text {
     font-size: 14px;
@@ -1415,7 +1568,7 @@ main {
   #section__under__news {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   #section__under__news .under__news__list {
     width: 100%;
@@ -1515,6 +1668,40 @@ main {
   #section__under__gallery .view__more {
     width: 80px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #section__under__gallery {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #section__under__gallery .under__gallery__list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #section__under__gallery .under__gallery__list .under__gallery__item {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #section__under__gallery .under__gallery__list .under__gallery__item .under__gallery__img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #section__under__gallery .view__more {
+    width: 73px;
+    font-size: 14px;
+  }
+  #section__under__gallery .scroll--link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
   }
 }
 #section__under__contact {
@@ -1630,6 +1817,32 @@ main {
   #section__under__contact .contact--btn {
     width: 240px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #section__under__contact {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  #section__under__contact .under__contact__form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__item {
+    font-size: 14px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body .form--text {
+    width: 100%;
+    height: 30px;
+  }
+  #section__under__contact .under__contact__form tr .under__contact__body .form--textarea {
+    width: 100%;
+    height: 265px;
   }
 }
 #footer {
@@ -1782,6 +1995,63 @@ main {
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #footer {
+    width: 100%;
+    height: auto;
+    background-color: #2C2E26;
+    padding: 70px 20px 20px 20px;
+  }
+  #footer .footer__contents {
+    width: 100%;
+    display: block;
+  }
+  #footer .footer__contents .footer__left {
+    width: 100%;
+  }
+  #footer .footer__contents .footer__left .title__box {
+    margin-bottom: 10px;
+  }
+  #footer .footer__contents .footer__left .title__box .footer__logo {
+    width: 52px;
+    height: 43px;
+  }
+  #footer .footer__contents .footer__left .title__box .footer__logo--title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #footer .footer__contents .footer__left .title__box .footer__logo--title .title--ja {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  #footer .footer__contents .footer__left .footer__sns {
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+  }
+  #footer .footer__contents .footer__right {
+    display: 100%;
+    margin-bottom: 70px;
+  }
+  #footer .footer__contents .footer__right .info--01 {
+    font-size: 14px;
+  }
+  #footer .footer__contents .footer__right .info--02 {
+    font-size: 14px;
+  }
+  #footer .footer__contents .footer__right .info--03 {
+    font-size: 14px;
+  }
+  #footer .footer__contents .footer__right .info--04 {
+    font-size: 14px;
+  }
+  #footer .copy__right {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
