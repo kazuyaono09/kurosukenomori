@@ -1,8 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans:wght@200;300;400;500;600&display=swap");
 /* ==================== 色一覧 ==================== */
 /* ==================== 側設定 ==================== */
 html {
-  font-family: "futura", "futura-pt", "Noto Sans JP", "Noto Sans", "sans-serif", "源ノ角ゴシック", "源ノ角ゴシック JP";
+  font-family: "futura", "futura-pt", "Noto Sans JP", "Noto Sans", "sans-serif";
   scroll-behavior: smooth;
 }
 
@@ -135,8 +136,9 @@ main {
   width: 280px;
   font-size: 14px;
   font-weight: 300;
-  font-family: "源ノ角ゴシック";
+  font-family: Noto Sans;
   color: #333333;
+  letter-spacing: 0.06em;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -156,6 +158,7 @@ main {
     width: 250px;
     font-size: 13px;
     font-weight: 300;
+    letter-spacing: 0.1em;
     padding: 23px 0px;
   }
 }
@@ -163,8 +166,9 @@ main {
   width: 280px;
   font-size: 14px;
   font-weight: 300;
-  font-family: "源ノ角ゴシック";
+  font-family: Noto Sans;
   color: #ffffff;
+  letter-spacing: 0.06em;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -185,6 +189,7 @@ main {
     width: 100%;
     font-size: 13px;
     font-weight: 200;
+    letter-spacing: 0.1em;
     padding: 23px 0px;
   }
 }
@@ -512,7 +517,7 @@ main {
 }
 #section__about .about__left .about__text {
   font-size: 14px;
-  font-family: "源ノ角ゴシック JP";
+  font-family: "源ノ角ゴシック";
   font-weight: 400;
   color: #333333;
   text-align: left;
@@ -630,10 +635,10 @@ main {
 }
 #section__service .service__contents .service__contents__list .service__list__item .contents__item--text {
   font-size: 16px;
-  font-family: "futura-pt";
-  font-weight: 300;
+  font-family: Noto Sans;
+  font-weight: 200;
   color: #ffffff;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   line-height: 28px;
 }
 
@@ -941,8 +946,8 @@ main {
 }
 #section__project .project__contents .project__left .project__left__title {
   font-size: 24px;
-  font-family: "futura";
-  font-weight: normal;
+  font-family: Noto Sans;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 3px;
@@ -954,8 +959,8 @@ main {
 }
 #section__project .project__contents .project__left .project__left__text {
   font-size: 16px;
-  font-family: "源ノ角ゴシック";
-  font-weight: normal;
+  font-family: Noto Sans;
+  font-weight: 300;
   color: #333333;
   text-align: left;
   line-height: 28px;
@@ -985,8 +990,8 @@ main {
 }
 #section__project .project__contents .project__right .project__right__title {
   font-size: 24px;
-  font-family: "futura";
-  font-weight: normal;
+  font-family: Noto Sans;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 3px;
@@ -998,8 +1003,8 @@ main {
 }
 #section__project .project__contents .project__right .project__right__text {
   font-size: 16px;
-  font-family: "源ノ角ゴシック";
-  font-weight: normal;
+  font-family: Noto Sans;
+  font-weight: 300;
   color: #333333;
   text-align: left;
   line-height: 28px;
