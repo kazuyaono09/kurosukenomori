@@ -209,6 +209,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: head 4s 1;
   z-index: 10;
   .header__logo__link {
     display: block;
@@ -303,6 +304,9 @@ main {
       opacity: 1;
     }
   }
+  &.header--bg {
+    background-color: rgba($color: #333333, $alpha: 0.3);
+  }
 }  
 
 @media screen and(max-width:768px){
@@ -332,6 +336,23 @@ main {
   }  
 }
 
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.3;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 
 .main__visual {
   position: relative;
@@ -342,6 +363,7 @@ main {
   background-image: url(img/mv__img.jpg) ;
   background-size: cover;
   background-position: center;
+  animation: main 2s 1;
   .main__visual__img {
     width: 308px;
     height: 255px;
@@ -350,6 +372,7 @@ main {
     left: 50%;
     transform: translate(-50%,-50%);
     text-shadow: 2px 2px 3px $c-text;
+    animation: logo 3s 1;
   }
   .main__visual__textA {
     position: absolute;
@@ -364,6 +387,7 @@ main {
     line-height: 28px;
     text-align: center;
     padding: 0px 105px;
+    animation: textA 2.5s 1;
   }
   .scroll__text {
     position: absolute;
@@ -466,16 +490,46 @@ main {
 @keyframes scroll {
   0% {
     width: 0px;
-    background-color: $c-white;
+    background-color: $c-bgcolor02;
     transform: translateX(0%);
   }
   50% {
-    background-color: $c-bgcolor02;
+    background-color: $c-white;
   }
   100%{
     width: 140px;
-    background-color: $c-bgcolor02;
+    background-color: $c-white;
     transform: translateX(100%);
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform:translate(100%,-50%) rotateZ(0deg);
+  }
+  100% {
+    transform:translate(-50%,-50%) rotateZ(-360deg);
+  }
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textA {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1954,7 +2008,7 @@ main {
     letter-spacing: 0.1em;
     line-height: 24px;
     margin-top: 17px;
-  }
+  }  
 }
 @media screen and(max-width:768px){
   #footer {

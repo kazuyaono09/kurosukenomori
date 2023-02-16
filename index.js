@@ -36,3 +36,7 @@ function animationScroll() {
   });
 }
 
+window.addEventListener("load" , function(){
+  // code
+});
+
