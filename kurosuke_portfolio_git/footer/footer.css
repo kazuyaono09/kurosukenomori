@@ -22,16 +22,11 @@ main {
 }
 
 .inner {
-  padding: 0px 105px;
+  padding: 0px 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .inner {
-    padding: 0px 20px;
-  }
-}
 .section {
   visibility: hidden;
   transition: all 0.5s;
@@ -96,7 +91,7 @@ main {
   padding: 70px 0px;
 }
 #footer .footer__contents {
-  max-width: 900px;
+  max-width: 750px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,8 +103,8 @@ main {
   margin-bottom: 21px;
 }
 #footer .footer__contents .footer__left .title__box .footer__logo {
-  width: 82px;
-  height: 70px;
+  width: 72px;
+  height: 60px;
   cursor: pointer;
 }
 #footer .footer__contents .footer__left .title__box .footer__logo--title {

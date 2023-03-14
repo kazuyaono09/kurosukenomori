@@ -22,16 +22,11 @@ main {
 }
 
 .inner {
-  padding: 0px 105px;
+  padding: 0px 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .inner {
-    padding: 0px 20px;
-  }
-}
 .section {
   visibility: hidden;
   transition: all 0.5s;
@@ -424,9 +419,9 @@ main {
   padding-bottom: 200px;
 }
 #section__about .inner {
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 50px;
 }
@@ -465,7 +460,6 @@ main {
 #section__about .inner .about__right {
   width: 320px;
   height: 320px;
-  margin-right: 60px;
 }
 #section__about .inner .about__right .about__right--img {
   box-shadow: 6px 6px 20px #656565;
@@ -535,7 +529,7 @@ main {
   text-align: center;
 }
 #section__service .service__contents {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin-top: 70px;
 }
@@ -543,11 +537,12 @@ main {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  gap: 70px;
+  gap: 30px;
 }
 #section__service .service__contents .service__contents__list .service__list__item {
-  width: calc((100% - 70px) / 3);
+  width: 280px;
   display: block;
+  margin: 0 auto;
 }
 #section__service .service__contents .service__contents__list .service__list__item .list__item__box {
   width: 100%;
@@ -558,6 +553,9 @@ main {
   border: 5px solid #DDDDDD;
   border-radius: 0px;
   margin: 0 0 0 auto;
+}
+#section__service .service__contents .service__contents__list .service__list__item .list__item__box .fa-solid {
+  font-size: 60px;
 }
 #section__service .service__contents .service__contents__list .service__list__item .contents__item--title {
   width: 70%;
@@ -581,6 +579,16 @@ main {
   line-height: 28px;
 }
 
+@media screen and (max-width: 900px) {
+  #section__service .service__contents .service__contents__list {
+    width: 100%;
+    gap: 30px;
+  }
+  #section__service .service__contents .service__contents__list .service__list__item {
+    width: calc((100% - 30px) / 3);
+    display: block;
+  }
+}
 @media screen and (max-width: 768px) {
   #section__service {
     width: 100%;

@@ -22,16 +22,11 @@ main {
 }
 
 .inner {
-  padding: 0px 105px;
+  padding: 0px 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .inner {
-    padding: 0px 20px;
-  }
-}
 .section {
   visibility: hidden;
   transition: all 0.5s;
@@ -98,7 +93,7 @@ main {
   z-index: 10;
 }
 .header .inner {
-  max-width: 1280px;
+  max-width: 1180px;
   height: 100%;
   display: flex;
   align-items: center;
