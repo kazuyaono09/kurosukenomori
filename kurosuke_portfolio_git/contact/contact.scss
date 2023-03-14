@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans:wght@200;300;400;500;600&display=swap');
+
+
+/* ==================== 色一覧 ==================== */
+$c-text: #333333;
+$c-white: #ffffff;
+$c-white-hover: #E2E6EA;
+$c-bgcolor01: #2C2E26;
+$c-bgcolor02: #DDDDDD;
+$c-main: #184C96;
+$c-main-hover: #113569;
+
+/* ==================== 側設定 ==================== */
+html {
+  font-family: 'futura','futura-pt' ,'Noto Sans JP','Noto Sans','sans-serif';
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
+/* ============================================================================================================
+                                                メインコンテンツ
+============================================================================================================ */
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner {
+  padding: 0px 105px ;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:768px) {
+  .inner {
+    padding: 0px 20px ;
+  }  
+}
+
+.section__under--title {
+  font-size: 40px;
+  font-family: "futura";
+  font-weight: 500;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 52px;  
+}
+@media screen and(max-width:768px){
+  .section__under--title {
+    font-size: 30px;
+    font-family: "futura";
+    font-weight: 300;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }  
+}
+.under__title--ja {
+  font-size: 14px;
+  font-family: "源ノ角ゴシック JP";
+  font-weight: 400;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 35px;  
+}
+@media screen and(max-width:768px){
+  .under__title--ja {
+    font-size: 12px;
+    font-family: "源ノ角ゴシック JP";
+    font-weight: 200;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }  
+}
+
+//section__under__contact
+#section__under__contact {
+  width: 100%;
+  background: linear-gradient( #333333, $c-bgcolor01);
+  padding-top: 130px;
+  padding-bottom: 70px;
+  .section__under--title {
+    color: $c-white;
+  }
+  .under__title--ja {
+    color: $c-white;
+  }
+  .under__contact__form {
+    width: 100%;
+    margin-bottom: 60px;
+    tr {
+      .under__contact__item {
+        font-size: 14px;
+        font-family: "源ノ角ゴシック";
+        font-weight: normal;
+        color: $c-white;
+        letter-spacing: 0.01em;
+        line-height: 28px;
+        text-align: left;
+        display: block;
+        .item--sign {
+          color: red;
+          margin-left: 3px;
+        }
+      }
+      .under__contact__body {
+        display: block;
+        margin-bottom: 20px;
+        .form--text {
+          width: 535px;
+          height: 30px;
+          font-size: 16px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          letter-spacing: 0.1em;
+          line-height: 25px;
+        }
+        .form--textarea {
+          width: 600px;
+          height: 265px;
+          font-size: 16px;
+          font-family: "源ノ角ゴシック";
+          font-weight: normal;
+          color: $c-text;
+          letter-spacing: 0.1em;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .contact--btn {
+    width: 280px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "源ノ角ゴシック";
+    display: block;
+    color: $c-white;
+    text-decoration: none;
+    border: 1px solid $c-white;
+    letter-spacing: 0.05em;
+    text-align: center;
+    transition: all 0.3s;
+    padding:20px 0px;
+    margin: 0 auto;
+    &:hover {
+      color: $c-bgcolor01;
+      box-shadow: 3px 3px 6px $c-text;
+      background-color: $c-white;
+    }
+  }
+}
+@media screen and(max-width:768px){
+  #section__under__contact {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    .under__contact__form {
+      width: 100%;
+      margin-bottom: 30px;
+      tr {
+        width: 100%;
+        .under__contact__item {
+          font-size: 14px;
+          .item--sign {
+            color: red;
+            margin-left: 3px;
+          }
+        }
+        .under__contact__body {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+          .form--text {
+            width: 100%;
+            height: 28px;
+            font-size: 14px;
+          }
+          .form--textarea {
+            max-width: 400px;
+            height: 265px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .contact--btn {
+      width: 240px;
+      font-size: 14px;
+    }
+  }  
+}
+@media screen and(max-width:425px){
+  #section__under__contact {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    .under__contact__form {
+      width: 100%;
+      margin-bottom: 30px;
+      tr {
+        .under__contact__item {
+          font-size: 14px;
+        }
+        .under__contact__body {
+          display: block;
+          margin-bottom: 20px;
+          .form--text {
+            width: 100%;
+            height: 30px;
+          }
+          .form--textarea {
+            width: 100%;
+            height: 265px;
+          }
+        }
+      }
+    }
+  }  
+}

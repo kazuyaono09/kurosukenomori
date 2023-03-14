@@ -14,7 +14,9 @@
   <meta property="og:image" content="OGP画像へのパス">
   <link rel="canonical" href="https://kazuyaono09.github.io/kurosuke_portfolio/">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header/header.css">
+  <link rel="stylesheet" href="about/about.css">
+  <link rel="stylesheet" href="footer/footer.css">
   <link rel="icon" href="img/favicon.png" id="favicon">
   <!--adobe-font-->
   <link rel="stylesheet" href="https://use.typekit.net/vqj7zfg.css">
@@ -24,21 +26,23 @@
 
 <body>
   <!--ここからヘッダー-->
-  <header class="header inner">
-    <a href="index.html" class="header__logo__link"><img class="header__logo" src="img/logo.png"></a>
-    <div class="humbergar">
-      <div class="bar--01"></div>
-      <div class="bar--02"></div>
+  <header class="header header--bg">
+    <div class="inner">
+      <a href="/" class="header__logo__link"><img class="header__logo" src="img/logo.png"></a>
+      <div class="humbergar">
+        <div class="bar--01"></div>
+        <div class="bar--02"></div>
+      </div>
+      <nav class="header__navi">
+        <ul class="header__navi__menu">
+          <li class="navi__menu__item"><a class="item--link" href="/">Top</a></li>
+          <li class="navi__menu__item"><a class="item--link" href="works.html">Works</a></li>
+          <li class="navi__menu__item"><a class="item--link" href="news.html">News</a></li>
+          <li class="navi__menu__item"><a class="item--link" href="gallery.html">Gallery</a></li>
+          <li class="navi__menu__item"><a class="item--link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>  
     </div>
-    <nav class="header__navi">
-      <ul class="header__navi__menu">
-        <li class="navi__menu__item"><a class="item--link" href="index.html">Top</a></li>
-        <li class="navi__menu__item"><a class="item--link" href="works.html">Works</a></li>
-        <li class="navi__menu__item"><a class="item--link" href="news.html">News</a></li>
-        <li class="navi__menu__item"><a class="item--link" href="gallery.html">Gllery</a></li>
-        <li class="navi__menu__item"><a class="item--link" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main">
@@ -83,8 +87,8 @@
   </main>
 
   <!--ここからフッター-->
-  <footer id="footer" class="inner">
-    <div class="footer__contents">
+  <footer id="footer">
+    <div class="footer__contents inner">
       <div class="footer__left">
         <div class="title__box">
           <a href="#"><img class="footer__logo" src="img/logo.png" alt="フッターのロゴイメージです。"></a>

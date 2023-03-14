@@ -1,0 +1,316 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans:wght@200;300;400;500;600&display=swap');
+
+
+/* ==================== 色一覧 ==================== */
+$c-text: #333333;
+$c-white: #ffffff;
+$c-white-hover: #E2E6EA;
+$c-bgcolor01: #2C2E26;
+$c-bgcolor02: #DDDDDD;
+$c-main: #184C96;
+$c-main-hover: #113569;
+
+/* ==================== 側設定 ==================== */
+html {
+  font-family: 'futura','futura-pt' ,'Noto Sans JP','Noto Sans','sans-serif';
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
+/* ============================================================================================================
+                                                メインコンテンツ
+============================================================================================================ */
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner {
+  padding: 0px 105px ;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:768px) {
+  .inner {
+    padding: 0px 20px ;
+  }  
+}
+
+.section {
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+  &.section--active {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.section__title {
+  font-size: 40px;
+  font-family: "futura";
+  font-weight: 500;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 50px;
+}
+@media screen and(max-width:768px){
+  .section__title {
+    font-size: 30px;
+    font-family: "futura";
+    font-weight: 300;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }  
+}
+.title__ja {
+  font-size: 16px;
+  font-family: "源ノ角ゴシック JP";
+  font-weight: 400;
+  color: $c-text;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+@media screen and(max-width:768px){
+  .title__ja {
+    font-size: 12px;
+    font-family: "源ノ角ゴシック JP";
+    font-weight: 200;
+    color: $c-text;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }  
+}
+
+
+
+//section__footer
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #2C2E26;
+    padding: 70px 0px;
+    .footer__contents {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .footer__left {
+        .title__box {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 21px;
+          .footer__logo {
+            width: 82px;
+            height: 70px;
+            cursor: pointer;
+          }
+          .footer__logo--title {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "futura-pt";
+            color: $c-white;
+            text-align: left;
+            letter-spacing: 0.1em;
+            line-height: 24px;
+            .title--ja {
+              font-size: 12px;
+              font-weight: 300;
+              font-family: "源ノ角ゴシック";
+              color: $c-white;
+              text-align: left;
+              letter-spacing: 0.1em;
+              line-height: 24px;  
+            }
+          }
+        }
+        .footer__sns {
+          display: flex;
+          gap: 20px;
+          .twitter--link {
+            display: block;
+          }
+          .insta--link {
+            display: block;
+          }
+        }
+      }
+      .footer__right {
+        .info--01 {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "futura-pt";
+          color: $c-white;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 24px;
+        }
+        .info--02 {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "futura-pt";
+          color: $c-white;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 24px;
+        }
+        .info--03 {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "futura-pt";
+          color: $c-white;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 24px;
+        }
+        .info--04 {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "futura-pt";
+          color: $c-white;
+          text-align: left;
+          letter-spacing: 0.1em;
+          line-height: 24px;
+        }
+      }  
+    }
+    .copy__right {
+      font-size: 15px;
+      font-weight: 300;
+      font-family: "futura-pt";
+      color: $c-white;
+      text-align: center;
+      letter-spacing: 0.1em;
+      line-height: 24px;
+      margin-top: 17px;
+    }  
+  }
+  @media screen and(max-width:768px){
+    #footer {
+      width: 100%;
+      height: auto;
+      background-color: #2C2E26;
+      padding: 70px 20px 20px 20px;
+      .footer__contents {
+        width: 100%;
+        display: block;
+        .footer__left {
+          width: 100%;
+          .title__box {
+            margin-bottom: 10px;
+            .footer__logo {
+              width: 65px;
+              height: 55px;
+            }
+            .footer__logo--title {
+              font-size: 16px;
+              .title--ja {
+                font-size: 11px;
+              }
+            }
+          }
+          .footer__sns {
+            display: flex;
+            gap: 20px;
+            padding: 10px 50px;
+            margin-bottom: 20px;
+          }
+        }
+        .footer__right {
+          display: 100%;
+          margin-bottom: 70px;
+          .info--01 {
+            font-size: 14px;
+          }
+          .info--02 {
+            font-size: 14px;
+          }
+          .info--03 {
+            font-size: 14px;
+          }
+          .info--04 {
+            font-size: 14px;
+          }
+        }  
+      }
+      .copy__right {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }  
+  }
+  @media screen and(max-width:425px){
+    #footer {
+      width: 100%;
+      height: auto;
+      background-color: #2C2E26;
+      padding: 70px 20px 20px 20px;
+      .footer__contents {
+        width: 100%;
+        display: block;
+        .footer__left {
+          width: 100%;
+          .title__box {
+            margin-bottom: 10px;
+            .footer__logo {
+              width: 52px;
+              height: 43px;
+            }
+            .footer__logo--title {
+              font-size: 16px;
+              line-height: 20px;
+              .title--ja {
+                font-size: 11px;
+                line-height: 18px;
+              }
+            }
+          }
+          .footer__sns {
+            display: flex;
+            gap: 20px;
+            padding: 10px 50px;
+            margin-bottom: 20px;
+          }
+        }
+        .footer__right {
+          display: 100%;
+          margin-bottom: 70px;
+          .info--01 {
+            font-size: 14px;
+          }
+          .info--02 {
+            font-size: 14px;
+          }
+          .info--03 {
+            font-size: 14px;
+          }
+          .info--04 {
+            font-size: 14px;
+          }
+        }  
+      }
+      .copy__right {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }  
+  }
